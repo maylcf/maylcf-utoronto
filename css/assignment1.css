@@ -1,0 +1,58 @@
+body {
+  margin: 25px;
+}
+
+.assignment-images img
+{
+    max-height: 600px;
+    margin-right: 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+.assignment-form {
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 25px;
+  border: #D0D0D0 1px solid;
+
+}
+
+label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.radio-inline {
+  margin-right: 10px;
+}
+
+.separator {
+  background-color: #D0D0D0;
+  width: 100px;
+  height: 5px;
+  border-radius: 25px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.assignment-task {
+  margin-top: 25px;
+  display: block;
+}
+
+.img-center {
+  display: block;
+  margin: auto;
+}
+
+.space-top {
+  margin-top: 15px;
+}
