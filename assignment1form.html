@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment 1 - Form</title>
+
+		<!--===============================================================================================-->
+
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./css/form.css">
+
+		<script src="./js/assignment1.js"></script>
+
+		<!--===============================================================================================-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<div class="rounded container border-1">
+			<form id="my-form" action="">
+
+				<div class="form-group">
+					<label for="email">Email address</label>
+					<input class="form-control" id="email" type="email" placeholder="Enter you email" required />
+				</div>
+
+				<div class="form-group">
+					<label for="url">Personal Url</label>
+					<input class="form-control" id="url" type="url" placeholder="http://" required  />
+				</div>
+
+				<div class="form-group">
+					<label for="year">Year of birth</label>
+					<input class="form-control" id="year" type="number" min="1900" max="2018" step="1" value="1990" required />
+				</div>
+
+				<div class="form-group">
+
+					<label>Gender</label>
+
+					<br />
+
+					<label class="radio-inline"><input type="radio" name="gender"> Male</label>
+					<label class="radio-inline"><input type="radio" name="gender"> Female</label>
+					<label class="radio-inline"><input type="radio" name="gender"> Other</label>
+
+				</div>
+
+				<div class="form-group">
+					<label for="comment">Comments</label>
+					<textarea class="form-control" id="comment" rows="2" placeholder="Enter your comments here..."></textarea>
+				</div>
+
+				<div class="checkbox">
+					<label><input type="checkbox" value=""> All data entered here are fictitious</label>
+				</div>
+
+				<div class="group">
+					<button id="clear" class="btn btn-danger mb-2" onclick="clearForm();" >Clear All</button>
+					<button id="submit" class="btn btn-primary mb-2" type="submit">Submit</button>
+        </div>
+
+			</form>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+  margin: 25px;
+  background-color: #F1F1F1;
+}
+
+.form-element
+{
+  margin-bottom: 15px;
+}
+
+.form-element label
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.radio-inline {
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 25px;
+  border: #D0D0D0 1px solid;
+}
+
+#clear {
+  margin-right: 10px;
+}
