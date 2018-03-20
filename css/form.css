@@ -20,7 +20,8 @@ body {
   margin-right: 10px;
 }
 
-.container {
+.container-border
+{
   max-width: 500px;
   padding: 20px;
   background-color: white;
@@ -30,4 +31,28 @@ body {
 
 #clear {
   margin-right: 10px;
+}
+
+.no-progressbar,meter .box { color: red; }
+.progressbar,meter .box { color: green; }
+
+.no-geolocation .box { color: red; }
+.geolocation .box { color: green; }
+
+/*
+* === task 4 ===
+*/
+
+@media (orientation: landscape) {
+  body {
+    margin: 25px;
+    background-color: #ffe6ff;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    margin: 25px;
+    background-color: #cceeff;
+  }
 }

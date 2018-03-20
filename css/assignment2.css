@@ -57,6 +57,21 @@ label {
   margin-top: 15px;
 }
 
+.multi-column {
+  column-count: 3;
+  column-width: 75px;
+  column-gap: 20px;
+  column-rule: 1px solid #fff;
+}
+
+.task-title {
+  color:  #002699;
+}
+
 .link-form {
     font-size: 20px;
+}
+
+.task-note {
+  color: #4d79ff;
 }
