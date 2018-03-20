@@ -33,6 +33,10 @@ body {
   margin-right: 10px;
 }
 
+/*
+* === Assignment 2 - task 3 ===
+*/
+
 .no-progressbar,meter .box { color: red; }
 .progressbar,meter .box { color: green; }
 
@@ -40,7 +44,7 @@ body {
 .geolocation .box { color: green; }
 
 /*
-* === task 4 ===
+* === Assignment 2 - task 4 ===
 */
 
 @media (orientation: landscape) {
