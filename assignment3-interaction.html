@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mayara - UofT : Assignment 3</title>
+
+    <!--===== css ======================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/assignment3.css">
+
+    <!--===== base scripts =============================================================================-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+    <!--===== Custom scripts ==========================================================================-->
+    <script src="./js/interaction.js"></script>
+
+    <!--===== Fonts ===================================================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  </head>
+  <body>
+    <main id="interaction" class="container-border text-center">
+
+      <!--===============================================================================================-->
+      <!--== Vibrate ====================================================================================-->
+      <!--===============================================================================================-->
+
+      <div id="vibrate-btn" class="container">
+        <p class="btn btn-primary" onclick="vibrate();">Click me to vibrate</p>
+      </div>
+
+      <!--===============================================================================================-->
+      <!--== Battery Status =============================================================================-->
+      <!--===============================================================================================-->
+
+      <div id="battery-status-btn" class="container">
+        <p class="btn btn-primary" onclick="getBatteryStatus();">Click me to see the Battery Status</p>
+        <div  class="text-center">
+          <h5>Battery Status:</h5><span id="battery-status-info"></span>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>

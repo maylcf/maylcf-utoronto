@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mayara - UofT : Assignment 3</title>
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/assignment2.css">
+
+    <!--===============================================================================================-->
+    <script src="./js/assignment1.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+
+    <!--===============================================================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+
+      <div id="about" class="container">
+
+        <a href="index.html">Home</a>
+        <br />
+        <br />
+
+        <h1>Assignment 3</h1>
+        <br />
+        <p class="text-left">Due April 10, 2018 by 11:59 PM Toronto time</p>
+      </div>
+
+      <!--===============================================================================================-->
+      <!--== Part 1 =====================================================================================-->
+      <!--===============================================================================================-->
+
+      <hr />
+
+      <div id="task-1" class="container assignment-task">
+        <h4 class="task-title">1. Using Geolocation and Maps [Marks: 30%]</h4><br/>
+        <p> Include a “See my location” button that shows
+        a map centered at the device’s location. If location services are turned off, don’t have
+        permissions, or geolocation is not available to ask the user for the Province (or Territory)
+        where they currently are (assume the user is in Canada). Based on the location present the
+        following information to the user: name of the province, the name of the Premier for that
+        province, one or two links to attractions for people the same age as the user, and the
+        Provincial tax. Handle errors (and fallback) by providing a Google static map centered at the
+        province’s Parliament. Use Google’s Closure Compiler (http://closurecompiler.appspot.com)
+        to compress your JavaScript code (if any).</p>
+
+        <div class="separator"></div>
+
+        <p class="text-center link-form"><a href="assignment3-map.html" class="btn btn-primary" target="_blank">Geolocation API Example</a></p>
+
+        <img src="./images/assignment_03_task_01.png" class="img img-center" alt="App QR Code">
+
+        <p class="task-note text-left">
+          <b>Notes: </b>
+            <br/> 1 - The "Province" field is originally disabled.
+            <br/> 2 - The map tries to get the user location, if the location is not available for some reason, the "Province" field will became enable so the user can input his/her location manually.
+            <br/> 3 - After the user submit the form, he/she will receive some information about the province.
+        </p>
+
+      </div>
+
+      <!--===============================================================================================-->
+      <!--== Part 2 =====================================================================================-->
+      <!--===============================================================================================-->
+
+      <hr />
+
+      <div id="task-2" class="container assignment-task">
+
+        <h4 class="task-title">2. Implementing Gestures with Hammer.js [Marks: 30%]</h4><br/>
+        <p> Implement two of the following gestures using Hammer (http://hammerjs.github.io/):
+        rotate, pinch, pan, or swipe. Include instructions as to what happens on your webpage when the user
+        performs the gesture. Use Google’s Closure Compiler to compress your JavaScript code.</p>
+
+        <div class="separator"></div>
+
+        <p class="text-center link-form"><a href="assignment3-hammer.html" class="btn btn-primary" target="_blank">Link to Hammer Example</a></p>
+        <br />
+
+        <p class="task-note text-center">
+          <b>Note:</b> Use pan lef and pan right to move the card image to front and back.
+        </p>
+
+      </div>
+
+      <!--===============================================================================================-->
+      <!--== Part 3 =====================================================================================-->
+      <!--===============================================================================================-->
+
+      <hr />
+
+      <div id="task-3" class="container assignment-task">
+
+        <h4 class="task-title">3. Implementing Device Interaction API [Marks: 40%].</h4><br/>
+        <p>Implement two of the following JavaScript APIs for device interaction: battery status, vibration, and media caption through
+        the device’s camera. Use Google’s Closure Compiler to compress your JavaScript code.
+        Handle fallbacks graciously. </p>
+
+        <div class="separator"></div>
+
+        <p class="text-center link-form"><a href="assignment3-interaction.html" class="btn btn-primary" target="_blank">Link to Device Interaction Example</a></p>
+
+        <img src="./images/assignment_03_task_03.png" class="img img-center" alt="App QR Code">
+
+        <p class="task-note">
+          <b>Note:</b>
+          <br/>1 - When the user clicks on the "Click me to vibrate" button, the device will vibrate for 2 seconds.
+          <br/>2 - When the user clicks on the "Click me to see the Battery Status" button, the app will display the battery level.
+        </p>
+
+      </div>
+
+      <!--===============================================================================================-->
+      <!--== End ========================================================================================-->
+      <!--===============================================================================================-->
+
+    </main>
+  </body>
+</html>

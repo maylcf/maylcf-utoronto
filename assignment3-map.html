@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mayara - UofT : Assignment 3</title>
+
+    <!--===== css ======================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/assignment3.css">
+
+    <!--===== scripts ==================================================================================-->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/modernizr.min.js"></script>
+    <script src="./js/assignment3.js"></script>
+    <script src="./js/geolocation.js"></script>
+
+    <!--===== Fonts ===================================================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+
+      <div id="about" class="container">
+
+        <a href="assignment3.html">Assignment 3</a>
+        <br />
+        <br />
+        <h1>Geolocation API Example</h1>
+        <br />
+      </div>
+
+      <!--===============================================================================================-->
+      <!--== Part 4 =====================================================================================-->
+      <!--===============================================================================================-->
+
+      <div id="task-4" class="container assignment-task">
+        <div id="map"></div>
+        <p><span id="locationMessage"></span></p>
+      </div>
+
+      <!--===============================================================================================-->
+      <!--== Part 4 =====================================================================================-->
+      <!--===============================================================================================-->
+      <div id="result" class="container alert alert-info" role="alert">
+        <h4 id="result-default-msg" class="text-center">Please submit this form to get informations about your province!! </h4>
+        <div id="province"></div>
+        <div id="premier"></div>
+        <div id="attractions"></div>
+        <div id="taxes"></div>
+      </div>
+
+      <!--===============================================================================================-->
+      <!--== Form =====================================================================================-->
+      <!--===============================================================================================-->
+
+      <div class="rounded container border-1 container-border">
+
+  			<div class="text-center">
+  				<progress id="progress-bar" value="0" max="5"></progress>
+  			</div>
+
+  			<form id="my-form" action="javascript:sendForm(provinceSelector.value)">
+
+  				<div class="form-group">
+  					<label for="email">Email address</label>
+  					<input class="form-control" id="email" type="email" placeholder="Enter you email" onfocusout="updateProgressBar()" required />
+  				</div>
+
+  				<div class="form-group">
+  					<label for="url">Personal Url</label>
+  					<input class="form-control" id="url" type="url" placeholder="http://" onfocusout="updateProgressBar()" required />
+  				</div>
+
+  				<div class="form-group">
+  					<label for="year">Year of birth</label>
+  					<input class="form-control" id="year" type="number" min="1900" max="2018" step="1" value="1990" onfocusout="updateProgressBar()" required />
+  				</div>
+
+          <div class="form-group">
+            <label for="provinceSelector">Province</label>
+            <select class="form-control" id="provinceSelector" name="provinceSelector" disabled>
+              <option selected> </option>
+              <option value="ON">Ontario</option>
+              <option value="QC">Quebec</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="NB">New Brunswick</option>
+              <option value="MB">Manitoba</option>
+              <option value="BC">British Columbia</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="AB">Alberta</option>
+              <option value="NL">Newfoundland and Labrador</option>
+            </select>
+          </div>
+
+  				<div class="form-group">
+
+  					<label>Gender</label>
+
+  					<br />
+
+  					<label class="radio-inline"><input type="radio" name="gender" onfocusout="updateProgressBar()"> Male</label>
+  					<label class="radio-inline"><input type="radio" name="gender" onfocusout="updateProgressBar()"> Female</label>
+  					<label class="radio-inline"><input type="radio" name="gender" onfocusout="updateProgressBar()"> Other</label>
+
+  				</div>
+
+  				<div class="form-group">
+  					<label for="comment">Comments</label>
+  					<textarea class="form-control" id="comment" rows="2" placeholder="Enter your comments here..." onfocusout="updateProgressBar()"></textarea>
+  				</div>
+
+  				<div class="group">
+            <button id="submit" class="btn btn-primary mb-2" type="submit">Submit Information</button>
+  					<button id="clear" class="btn btn-danger mb-2" onclick="clearForm();" >Clear All</button>
+          </div>
+
+  			</form>
+
+      <!--===============================================================================================-->
+      <!--== End ========================================================================================-->
+      <!--===============================================================================================-->
+
+    </main>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA29RmMwSSNO68RlIn9cezuL1TCkMqZX8g"></script>
+  </body>
+</html>
