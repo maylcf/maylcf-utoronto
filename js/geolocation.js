@@ -18,7 +18,7 @@ $(document).ready (function () {
         var longitude = position.coords.longitude;
         var latitude = position.coords.latitude;
 
-        var url = 'http://api.geonames.org/countrySubdivisionJSON?lat=' + latitude + '&lng=' + longitude + '&username=maylcf';
+        var url = 'https://api.geonames.org/countrySubdivisionJSON?lat=' + latitude + '&lng=' + longitude + '&username=maylcf';
 
         $.ajax({
         				type: 'GET',
